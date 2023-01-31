@@ -57,6 +57,8 @@ int main(int argc, char** argv) {
 		message[str_len] = 0;
 		printf("Message from client: %s \n", message);
 	}
+	
+	printf("Test [%d]\n",clnt_sock);
 
 	close(clnt_sock);
 	close(serv_sock);
